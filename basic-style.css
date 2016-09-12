@@ -12,10 +12,18 @@ body{
 }
 
 p{
-      border: 1px solid black;
-      padding: 0px;
+      background-color: white;
+      /*border: 1px outset black;*/
+      border-bottom-style: outset;
+      border-width: 5px;
+      border-radius: 10px;
+      padding: 10px;
 }
 
+p.foot{
+	background-color: black;
+	color: white;
+}
 ul{
   overflow: hidden;
   list-style-type: none;
@@ -23,26 +31,36 @@ ul{
   top:0;
   width: 100%;
   margin: 0;
-  padding: 0;
-  background-color: #ffffff;
+  padding: 5px;
+  border-bottom-style: outset;
+  border-width: 5px;
+  background-color: #333;
 }
 
 li{
   display: inline;
+
 }
 
 li a{
-   display: block;
+   margin: 1px;
    width: 20%;
-   color: #333;
+   color: black;
 }
 
 li a:hover{
-  background-color: #000;
+  background-color: #292929;
+  color: white;
+}
+
+li:first-child{
+  border-right: 1px solid #fff;
+  text-size: 20%;
 }
 
 .active{
-  color: #0d0d0d;
+  background-color: gray;
+  color: white;
 }
 
 .container{
@@ -61,6 +79,9 @@ li a:hover{
 .container img {
   width: 100%;
   height: auto;
+  border-bottom-style: outset;
+  border-width: 5px;
+  border-radius: 5px;
 }
 
 button {
