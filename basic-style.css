@@ -61,13 +61,40 @@ li:first-child{
   padding-right: 5px;
 }
 
+table{
+    display:table;
+    
+}
+
+table:nth-child(even){
+    background: green;
+    color: white;
+    text-align: center;
+}
+thead {
+    display: table-header-group;
+}
+tr{
+    display: table-row;
+    
+}
+
 .active{
   background-color: gray;
   color: white;
 }
 
+footer{
+    display: block;
+}
+
+.footer{
+    
+    background: gray;
+}
+
 .container{
-  max--width: 100px;
+  max-width: 100px;
   position: relative;
   color: black;
   margin:0  auto;
